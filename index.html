@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Switch Case</h1>
+
+      <div class="result"></div>
+
+      <input id="text" type="number"oninput="send()" placeholder="Enter a number  1 to 10"/>
+     
+    </div>
+
+    <script>
+      function send() {
+           const result = document.querySelector(".result");
+            const inputText = document.getElementById("text").value;
+           
+        switch (inputText) {
+       
+                case "1":
+                result.style.backgroundColor="red"
+                break;
+                case "2":
+                result.style.backgroundColor="yellow"
+                break;
+                case "3":
+                result.style.backgroundColor="green"
+                break;
+                case "4":
+                result.style.backgroundColor="gray"
+                break;
+                case "5":
+                result.style.backgroundColor="blue"
+                break;
+                case "6":
+                result.style.backgroundColor="orange"
+                break;
+                case "7":
+                result.style.backgroundColor="cyan"
+                break;
+                case "8":
+                result.style.backgroundColor="pink"
+                break;
+                case "9":
+                result.style.backgroundColor="gray"
+                break;
+                case "10":
+                result.style.backgroundColor="olive"
+                break;
+       
+           
+        }
+      }
+    </script>
+  </body>
+</html>
